@@ -1,0 +1,1 @@
+This is the start of a project to make a movie review app in the vein of rotten tomatoes. This will be the admin side of the app. It will allow administrators to log in through a bare bones but professional page to make changes to the front facing/client pages of the app and it's database, both of which will be created later.
