@@ -1,0 +1,22 @@
+﻿@model List<MoviesAdmin.Models.Movie>
+
+@{
+    ViewData["Title"] = "All Movies";
+}
+
+<h1>All Movies</h1>
+
+<p>@Model.Count movies available.</p>
+
+@foreach (var movie in Model)
+{
+    <h2>@movie.Title</h2>
+    <p>@movie.Synopsis</p>
+    <p>Director: @movie.Director</p>
+    <p>Genre: @movie.Genre</p>
+    <p>Rating: @movie.Rating</p>
+    <p>Release Date: @movie.ReleaseDate.ToString("MMMM dd, yyyy")</p>
+    <p>Runtime: @movie.Runtime</p>
+    <p>Language: @movie.Language</p>
+    <p>Country: @movie.Country</p>
+}
